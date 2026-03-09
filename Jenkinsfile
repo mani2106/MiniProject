@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/RPMadhumitha/testjenkins.git'
+                git branch: 'main', 
+                git 'https://github.com/RPMadhumitha/testjenkins.git',
+                credentialsId: 'github-creds'
             }
         }
 
