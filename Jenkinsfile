@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Correct usage: single git block with parameters
                 git branch: 'main',
-                    url: 'https://github.com/RPMadhumitha/testjenkins.git',
+                    url: 'https://github.com/RPMadhumitha/MiniProject.git',
                     credentialsId: 'github-creds'
             }
         }
