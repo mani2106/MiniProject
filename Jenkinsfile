@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "your-dockerhub-user/flask-app"
+        IMAGE = "madhumitha3199/flask-app"
         TAG = "${BUILD_NUMBER}"
     }
 
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/youruser/testjenkins.git'
+                git 'https://github.com/RPMadhumitha/testjenkins.git'
             }
         }
 
